@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --plum-900: #1a1025;
+  --plum-800: #2D1B33;
+  --plum-700: #4A2D5C;
+  --sand-100: #F5F0E8;
+  --sand-200: #E8DCC8;
+  --sand-300: #D4C5A9;
+  --sand-400: #C4B394;
+}
+
+body {
+  background-color: var(--plum-900);
+  color: var(--sand-300);
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--plum-900);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--plum-700);
+  border-radius: 3px;
+}
+
+/* Form input styling */
+input[type="date"],
+input[type="time"] {
+  color-scheme: dark;
+}
