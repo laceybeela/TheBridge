@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { cormorant, inter } from "./fonts";
 import { ReadingProvider } from "@/lib/reading-context";
 import "./globals.css";
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
       <body className="font-body antialiased min-h-screen">
         <ReadingProvider>{children}</ReadingProvider>
+        <Analytics />
       </body>
     </html>
   );

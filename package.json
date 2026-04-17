@@ -18,6 +18,7 @@
     "typescript": "^5.4.0"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "astronomy-engine": "^2.1.19",
     "framer-motion": "^11.15.0",
     "geo-tz": "^8.1.6",
