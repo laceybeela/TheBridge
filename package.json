@@ -1,29 +1,15 @@
 {
-  "name": "bridge",
-  "version": "0.1.0",
-  "description": "The Bridge — astrology reading engine",
-  "main": "dist/index.js",
+  "name": "bridge-monorepo",
+  "private": true,
   "scripts": {
-    "build:engine": "tsc -p tsconfig.engine.json",
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start"
+    "build": "turbo run build",
+    "dev": "turbo run dev --filter=@bridge/web",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.4.0"
+    "turbo": "^2.3.0"
   },
-  "dependencies": {
-    "@vercel/analytics": "^2.0.1",
-    "astronomy-engine": "^2.1.19",
-    "framer-motion": "^11.15.0",
-    "geo-tz": "^8.1.6",
-    "next": "^15.1.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  }
+  "packageManager": "pnpm@9.15.4"
 }

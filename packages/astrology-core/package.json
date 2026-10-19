@@ -1,0 +1,22 @@
+{
+  "name": "@bridge/astrology-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Core astrology engine: chart calculation, trait extraction, theme detection, reading generation",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@bridge/shared-types": "workspace:*",
+    "@bridge/interpretations": "workspace:*",
+    "astronomy-engine": "^2.1.19",
+    "geo-tz": "^8.1.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^3.0.0"
+  }
+}

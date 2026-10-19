@@ -1,0 +1,17 @@
+{
+  "name": "@bridge/interpretations",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Astrology interpretation data: signs, traits, and theme definitions",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@bridge/shared-types": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
