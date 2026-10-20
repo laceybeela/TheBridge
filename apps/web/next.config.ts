@@ -9,7 +9,8 @@ const nextConfig: NextConfig = {
   ],
   serverExternalPackages: ["geo-tz"],
   outputFileTracingIncludes: {
-    "/*": ["./node_modules/geo-tz/data/**"],
+    "/": ["./node_modules/geo-tz/data/*"],
+    "/api/*": ["./node_modules/geo-tz/data/*"],
   },
 };
 
