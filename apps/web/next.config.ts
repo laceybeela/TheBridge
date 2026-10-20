@@ -7,11 +7,6 @@ const nextConfig: NextConfig = {
     "@bridge/interpretations",
     "@bridge/astrology-core",
   ],
-  serverExternalPackages: ["geo-tz"],
-  outputFileTracingIncludes: {
-    "/": ["./node_modules/geo-tz/data/*"],
-    "/api/*": ["./node_modules/geo-tz/data/*"],
-  },
 };
 
 export default nextConfig;

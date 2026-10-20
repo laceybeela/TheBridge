@@ -10,12 +10,13 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@bridge/shared-types": "workspace:*",
     "@bridge/interpretations": "workspace:*",
+    "@bridge/shared-types": "workspace:*",
     "astronomy-engine": "^2.1.19",
-    "geo-tz": "^8.1.6"
+    "tz-lookup": "^6.1.25"
   },
   "devDependencies": {
+    "@types/tz-lookup": "^6.1.2",
     "typescript": "^5.4.0",
     "vitest": "^3.0.0"
   }

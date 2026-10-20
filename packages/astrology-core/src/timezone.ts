@@ -1,4 +1,4 @@
-import { find } from "geo-tz";
+import tzlookup from "tz-lookup";
 
 /**
  * Convert a local birth time to UTC using the timezone at the birth location.
@@ -12,7 +12,7 @@ export function localBirthTimeToUTC(
   latitude: number,
   longitude: number
 ): { date: string; time: string } {
-  const [tz] = find(latitude, longitude);
+  const tz = tzlookup(latitude, longitude);
 
   // Interpret the input as if it were UTC (reference point)
   const asUTC = new Date(`${date}T${time}:00Z`);
